@@ -13,7 +13,7 @@ Pod::Spec.new do |s|
   s.ios.deployment_target = '8.0'
   s.tvos.deployment_target = '9.0'
   s.source_files = "YXProgressHUDView/*.{h,m}"
-  s.public_header_files = "YXProgressHUDView/HUD_Configuration.h"
+  s.public_header_files = "YXProgressHUDView/HUD_Configuration.h", "YXProgressHUDView/YXProgressHUDView.h"
   s.frameworks   = "UIKit"
   s.requires_arc = true
   s.dependency "MBProgressHUD", "~> 1.0.0"
