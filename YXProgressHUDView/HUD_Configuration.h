@@ -8,7 +8,7 @@
 
 #ifndef HUD_Configuration_h
 #define HUD_Configuration_h
-
+#import "YXHUDProgressView.h"
 
 
 //  配置HUD等待视图主题颜色
