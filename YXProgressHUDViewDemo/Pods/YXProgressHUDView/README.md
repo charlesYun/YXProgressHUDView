@@ -1,0 +1,2 @@
+# YXProgressHUDView
+YXProgressHUDView是基于MBProgressHUDView封装的方法，只为使用更方便.

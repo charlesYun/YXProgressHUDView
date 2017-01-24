@@ -1,0 +1,15 @@
+PODS:
+  - MBProgressHUD (1.0.0)
+  - YXProgressHUDView (1.0.0):
+    - MBProgressHUD (~> 1.0.0)
+
+DEPENDENCIES:
+  - YXProgressHUDView
+
+SPEC CHECKSUMS:
+  MBProgressHUD: 4890f671c94e8a0f3cf959aa731e9de2f036d71a
+  YXProgressHUDView: 68326b85cd800cdcd16af9cf20f79d1aa1c322bf
+
+PODFILE CHECKSUM: 0cf40f65eacdefff9517fa1172125ebeb748bb3f
+
+COCOAPODS: 1.1.1

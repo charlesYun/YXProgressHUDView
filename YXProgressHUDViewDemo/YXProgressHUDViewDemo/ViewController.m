@@ -8,6 +8,8 @@
 
 #import "ViewController.h"
 #import "YXTableViewCell.h"
+#import "YXHUDProgressView.h"
+
 @interface ViewController ()<UITableViewDelegate,UITableViewDataSource>
 
 @property (weak, nonatomic) IBOutlet UITableView *YXTableView;
@@ -38,6 +40,7 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
+    [self showYXProgressHUDView:indexPath];
     
 }
 
@@ -47,27 +50,38 @@
     switch (indexPath.row) {
         case 0:
         {
-            
+            ShowMessage(self.menuArray[indexPath.row]);
         }
             break;
         case 1:
         {
-            
+            ShowDefaultLoadingView(self.menuArray[indexPath.row]);
+            dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(5 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+                DismissDefaultHud();
+            });
         }
             break;
         case 2:
         {
-            
+            ShowDefaultSuccessView(self.menuArray[indexPath.row], ^{
+                
+            });
         }
             break;
         case 3:
         {
-            
+            ShowDefaultErrorView(self.menuArray[indexPath.row], ^{
+                
+            });
         }
             break;
         case 4:
         {
-            
+            MBProgressHUD *hud = ShowDefaultProgressView(self.menuArray[indexPath.row], MBProgressHUDModeAnnularDeterminate);
+            hud.progress = 100;
+            dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(5 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+                DismissDefaultHud();
+            });
         }
             break;
             
