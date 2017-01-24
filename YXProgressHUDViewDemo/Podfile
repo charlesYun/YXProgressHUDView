@@ -1,0 +1,14 @@
+platform:ios,'8.0'
+
+
+
+target 'YXProgressHUDViewDemo' do
+
+
+pod 'YXProgressHUDView'
+
+
+
+
+
+end

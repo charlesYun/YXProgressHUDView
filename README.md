@@ -1,2 +1,12 @@
 # YXProgressHUDView
-YXProgressHUDView是基于MBProgressHUDView封装的方法，只为使用更方便.
+
+
+
+Welcome to YXProgressHUDView!
+===================
+
+- 使用
+
+使用cocoapods 导入即可
+
+>  pod 'YXProgressHUDView'
