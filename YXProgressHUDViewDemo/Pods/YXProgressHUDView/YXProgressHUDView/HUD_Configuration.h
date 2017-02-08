@@ -11,7 +11,7 @@
 
 
 //  配置HUD等待视图主题颜色
-#define HUDContentColor [UIColor colorWithRed:100/255.0f green:200/255.0f blue:90/255.0f alpha:1]
+#define HUDContentColor [UIColor colorWithRed:200/255.0f green:200/255.0f blue:90/255.0f alpha:1]
 
 //  配置显示时间
 #define HUDShowTime 3.0f

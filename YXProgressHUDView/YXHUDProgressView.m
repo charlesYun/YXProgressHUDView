@@ -100,6 +100,7 @@ void ShowLoadingView(UIView *view,NSString *message) {
  */
 void ShowDefaultSuccessView(NSString *message,void(^completed)()) {
     
+    DismissDefaultHud();
     if (![NSThread isMainThread]) {
         dispatch_async(dispatch_get_main_queue(), ^{
             MBProgressHUD *hud = baseHUDView(DefalutWindow(), HUDContentColor);
@@ -122,6 +123,7 @@ void ShowDefaultSuccessView(NSString *message,void(^completed)()) {
  */
 void ShowSuccessView(UIView *view,NSString *message,void(^completed)()) {
     
+    DismissHud(view);
     if (![NSThread isMainThread]) {
         dispatch_async(dispatch_get_main_queue(), ^{
             MBProgressHUD *hud = baseHUDView(view, HUDContentColor);
@@ -144,6 +146,7 @@ void ShowSuccessView(UIView *view,NSString *message,void(^completed)()) {
  */
 void ShowDefaultErrorView(NSString *message,void(^completed)()) {
     
+    DismissDefaultHud();
     if (![NSThread isMainThread]) {
         dispatch_async(dispatch_get_main_queue(), ^{
             MBProgressHUD *hud = baseHUDView(DefalutWindow(), HUDContentColor);
@@ -167,6 +170,7 @@ void ShowDefaultErrorView(NSString *message,void(^completed)()) {
  */
 void ShowErrorView(UIView *view,NSString *message,void(^completed)()) {
     
+    DismissHud(view);
     if (![NSThread isMainThread]) {
         dispatch_async(dispatch_get_main_queue(), ^{
             MBProgressHUD *hud = baseHUDView(view, HUDContentColor);
