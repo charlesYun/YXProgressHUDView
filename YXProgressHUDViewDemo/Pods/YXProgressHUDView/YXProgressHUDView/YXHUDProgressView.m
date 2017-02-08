@@ -12,12 +12,14 @@
 
 
 #pragma mark -创建初始HUDView
-MBProgressHUD* baseHUDView(UIView *view,UIColor *color){
+MBProgressHUD* baseHUDView(UIView *view){
     
     MBProgressHUD *hud = [MBProgressHUD showHUDAddedTo:view animated:YES];
     hud.animationType = MBProgressHUDAnimationZoom;
-    hud.contentColor = color;
-    hud.margin = 20.f;
+    hud.contentColor = HUDContentColor;
+    hud.bezelView.backgroundColor = HUDBezelViewColor;
+    hud.bezelView.layer.cornerRadius = HUDBezelViewCornerRadius;
+    hud.margin = HUDContentMargin;
     hud.removeFromSuperViewOnHide = YES;
     return hud;
 }
@@ -32,13 +34,13 @@ void ShowMessage(NSString *message) {
     
     if (![NSThread isMainThread]) {
         dispatch_async(dispatch_get_main_queue(), ^{
-            MBProgressHUD *hud = baseHUDView(DefalutWindow(), HUDContentColor);
+            MBProgressHUD *hud = baseHUDView(DefalutWindow());
             hud.label.text = message;
             hud.mode = MBProgressHUDModeText;
             [hud hideAnimated:YES afterDelay:HUDShowTime];
         });
     }else{
-        MBProgressHUD *hud = baseHUDView(DefalutWindow(), HUDContentColor);
+        MBProgressHUD *hud = baseHUDView(DefalutWindow());
         hud.label.text = message;
         hud.mode = MBProgressHUDModeText;
         [hud hideAnimated:YES afterDelay:HUDShowTime];
@@ -56,12 +58,12 @@ void ShowDefaultLoadingView(NSString *message) {
     
     if (![NSThread isMainThread]) {
         dispatch_async(dispatch_get_main_queue(), ^{
-            MBProgressHUD *hud = baseHUDView(DefalutWindow(), HUDContentColor);
+            MBProgressHUD *hud = baseHUDView(DefalutWindow());
             hud.label.text = message;
             hud.mode = MBProgressHUDModeIndeterminate;
         });
     }else{
-        MBProgressHUD *hud = baseHUDView(DefalutWindow(), HUDContentColor);
+        MBProgressHUD *hud = baseHUDView(DefalutWindow());
         hud.label.text = message;
         hud.mode = MBProgressHUDModeIndeterminate;
     }
@@ -79,12 +81,12 @@ void ShowLoadingView(UIView *view,NSString *message) {
     
     if (![NSThread isMainThread]) {
         dispatch_async(dispatch_get_main_queue(), ^{
-            MBProgressHUD *hud = baseHUDView(view, HUDContentColor);
+            MBProgressHUD *hud = baseHUDView(view);
             hud.label.text = message;
             hud.mode = MBProgressHUDModeIndeterminate;
         });
     }else{
-        MBProgressHUD *hud = baseHUDView(view, HUDContentColor);
+        MBProgressHUD *hud = baseHUDView(view);
         hud.label.text = message;
         hud.mode = MBProgressHUDModeIndeterminate;
     }
@@ -102,11 +104,11 @@ void ShowDefaultSuccessView(NSString *message,void(^completed)()) {
     
     if (![NSThread isMainThread]) {
         dispatch_async(dispatch_get_main_queue(), ^{
-            MBProgressHUD *hud = baseHUDView(DefalutWindow(), HUDContentColor);
+            MBProgressHUD *hud = baseHUDView(DefalutWindow());
             PerformCustomHUDMethod(hud,message,@"success",completed);
         });
     }else{
-        MBProgressHUD *hud = baseHUDView(DefalutWindow(), HUDContentColor);
+        MBProgressHUD *hud = baseHUDView(DefalutWindow());
         hud.label.text = message;
         PerformCustomHUDMethod(hud,message,@"success",completed);
     }
@@ -124,11 +126,11 @@ void ShowSuccessView(UIView *view,NSString *message,void(^completed)()) {
     
     if (![NSThread isMainThread]) {
         dispatch_async(dispatch_get_main_queue(), ^{
-            MBProgressHUD *hud = baseHUDView(view, HUDContentColor);
+            MBProgressHUD *hud = baseHUDView(view);
             PerformCustomHUDMethod(hud,message,@"success",completed);
         });
     }else{
-        MBProgressHUD *hud = baseHUDView(view, HUDContentColor);
+        MBProgressHUD *hud = baseHUDView(view);
         hud.label.text = message;
         PerformCustomHUDMethod(hud,message,@"success",completed);
     }
@@ -146,12 +148,12 @@ void ShowDefaultErrorView(NSString *message,void(^completed)()) {
     
     if (![NSThread isMainThread]) {
         dispatch_async(dispatch_get_main_queue(), ^{
-            MBProgressHUD *hud = baseHUDView(DefalutWindow(), HUDContentColor);
+            MBProgressHUD *hud = baseHUDView(DefalutWindow());
             hud.label.text = message;
             PerformCustomHUDMethod(hud,message,@"error",completed);
         });
     }else{
-        MBProgressHUD *hud = baseHUDView(DefalutWindow(), HUDContentColor);
+        MBProgressHUD *hud = baseHUDView(DefalutWindow());
         hud.label.text = message;
         PerformCustomHUDMethod(hud,message,@"error",completed);
     }
@@ -169,12 +171,12 @@ void ShowErrorView(UIView *view,NSString *message,void(^completed)()) {
     
     if (![NSThread isMainThread]) {
         dispatch_async(dispatch_get_main_queue(), ^{
-            MBProgressHUD *hud = baseHUDView(view, HUDContentColor);
+            MBProgressHUD *hud = baseHUDView(view);
             hud.label.text = message;
             PerformCustomHUDMethod(hud,message,@"error",completed);
         });
     }else{
-        MBProgressHUD *hud = baseHUDView(view, HUDContentColor);
+        MBProgressHUD *hud = baseHUDView(view);
         hud.label.text = message;
         PerformCustomHUDMethod(hud,message,@"error",completed);
     }
@@ -217,12 +219,12 @@ MBProgressHUD* ShowDefaultProgressView(NSString *message,MBProgressHUDMode mode)
     __block MBProgressHUD *hud;
     if (![NSThread isMainThread]) {
         dispatch_async(dispatch_get_main_queue(), ^{
-            hud = baseHUDView(DefalutWindow(), HUDContentColor);
+            hud = baseHUDView(DefalutWindow());
             hud.label.text = message;
             hud.mode = mode;
         });
     }else{
-        hud = baseHUDView(DefalutWindow(), HUDContentColor);
+        hud = baseHUDView(DefalutWindow());
         hud.label.text = message;
         hud.mode = mode;
     }
@@ -243,12 +245,12 @@ MBProgressHUD* ShowProgressView(UIView *view,NSString *message,MBProgressHUDMode
     __block MBProgressHUD *hud;
     if (![NSThread isMainThread]) {
         dispatch_async(dispatch_get_main_queue(), ^{
-            hud = baseHUDView(view, HUDContentColor);
+            hud = baseHUDView(view);
             hud.label.text = message;
             hud.mode = mode;
         });
     }else{
-        hud = baseHUDView(view, HUDContentColor);
+        hud = baseHUDView(view);
         hud.label.text = message;
         hud.mode = mode;
     }
