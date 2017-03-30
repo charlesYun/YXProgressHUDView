@@ -197,7 +197,7 @@ void PerformCustomHUDMethod(MBProgressHUD *hud,NSString *message,NSString *image
     hud.label.text = message;
     UIImage *image = [[UIImage imageNamed:imageNamed] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
     hud.customView = [[UIImageView alloc] initWithImage:image];
-    hud.bezelView.backgroundColor = [[UIColor blackColor] colorWithAlphaComponent:0.6];
+    hud.bezelView.backgroundColor = HUDBezelViewColor
     [hud hideAnimated:YES afterDelay:HUDShowTime];
     if (completed) {
         dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(HUDShowTime * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{

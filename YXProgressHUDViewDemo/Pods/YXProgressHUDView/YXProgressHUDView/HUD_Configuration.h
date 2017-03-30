@@ -11,13 +11,13 @@
 
 
 //  配置HUD等待视图主题颜色/菊花、文字
-#define HUDContentColor [UIColor colorWithRed:200/255.0f green:200/255.0f blue:90/255.0f alpha:1]
+#define HUDContentColor [UIColor colorWithRed:0.f green:0.6f blue:0.7f alpha:1.f];
 
 //  配置HUD等待视图背景颜色
-#define HUDBezelViewColor [UIColor colorWithRed:100/255.0f green:100/255.0f blue:20/255.0f alpha:1]
+#define HUDBezelViewColor [UIColor colorWithWhite:0.f alpha:0.1f];
 
 //  配置HUD等待视图背景圆角
-#define HUDBezelViewCornerRadius 30
+#define HUDBezelViewCornerRadius 10
 
 //  配置HUD内容距边框距离
 #define HUDContentMargin 20

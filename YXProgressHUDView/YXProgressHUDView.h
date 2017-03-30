@@ -1,5 +1,5 @@
 //
-//  YXHUDProgressView.h
+//  YXProgressHUDView.h
 //  Framework
 //
 //  Created by 曹云霄 on 2017/1/22.
@@ -13,7 +13,7 @@
 
 
 
-@interface YXHUDProgressView : NSObject
+@interface YXProgressHUDView : NSObject
 
 
 /**
