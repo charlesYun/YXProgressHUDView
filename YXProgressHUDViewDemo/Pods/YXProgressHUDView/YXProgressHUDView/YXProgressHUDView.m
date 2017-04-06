@@ -195,7 +195,7 @@ void PerformCustomHUDMethod(MBProgressHUD *hud,NSString *message,NSString *image
     
     hud.mode = MBProgressHUDModeCustomView;
     hud.label.text = message;
-    UIImage *image = [imagesNamedFromCustomBundle(imageNamed) imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
+    UIImage *image = [[UIImage imageNamed:imageNamed] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
     hud.customView = [[UIImageView alloc] initWithImage:image];
     hud.bezelView.backgroundColor = HUDBezelViewColor
     [hud hideAnimated:YES afterDelay:HUDShowTime];
@@ -329,16 +329,11 @@ UIView *DefalutWindow(void) {
 }
 
 
-/**
- 加载bundle图片资源
- 
- @param imgName 图片名字
- */
-UIImage* imagesNamedFromCustomBundle(NSString *imgName) {
-    NSString *bundlePath = [[NSBundle mainBundle] pathForResource:@"YXProgressHUDView" ofType:@"bundle"];
-    NSString *img_path = [bundlePath stringByAppendingPathComponent:imgName];
-    return [UIImage imageWithContentsOfFile:img_path];
-}
+
+
+
+
+
 
 
 

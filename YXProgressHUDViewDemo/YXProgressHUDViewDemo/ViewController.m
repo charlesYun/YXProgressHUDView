@@ -8,7 +8,7 @@
 
 #import "ViewController.h"
 #import "YXTableViewCell.h"
-#import "YXHUDProgressView.h"
+#import "YXProgressHUDView.h"
 
 @interface ViewController ()<UITableViewDelegate,UITableViewDataSource>
 

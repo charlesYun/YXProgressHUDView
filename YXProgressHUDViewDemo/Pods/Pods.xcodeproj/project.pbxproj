@@ -8,18 +8,18 @@
 
 /* Begin PBXBuildFile section */
 		376C7CDCC4445230FBCD74409A26499B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 82D40E632FA2A47E7DBA77D3D46FDFE8 /* Foundation.framework */; };
+		47F59CAADBF7A1867EA1E3B844D90399 /* YXProgressHUDView.m in Sources */ = {isa = PBXBuildFile; fileRef = E155F22C44B2A8CE7C99523659E30A86 /* YXProgressHUDView.m */; };
 		536F7D0550F5FD9F5869CEC995CFEE9B /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 9268E7F24F2ECDB7E65FDCA584415527 /* MBProgressHUD.m */; };
 		5ACBC8A3F73B8F9D9C6E932B357C69EE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 82D40E632FA2A47E7DBA77D3D46FDFE8 /* Foundation.framework */; };
+		6214DEC49C4673C5D77F27C6BF6CE306 /* YXProgressHUDView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4433C46EB6F25D2D62E2CC556CFF8977 /* YXProgressHUDView-dummy.m */; };
+		651693A1989F09010D71DD2DFCBB02AF /* YXProgressHUDView.h in Headers */ = {isa = PBXBuildFile; fileRef = 42536C0D7EDE63C451887A109E5CF03C /* YXProgressHUDView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6CD1985EE16EBBDEFA264DBDA61CD5FD /* Pods-YXProgressHUDViewDemo-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A59E81A45BDF09987ADD3F15C905FC23 /* Pods-YXProgressHUDViewDemo-dummy.m */; };
 		8C9B1DC3568E2881FF159096A119F748 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E5B476C7C3BDD4218E3B0B852CE57093 /* CoreGraphics.framework */; };
-		A026711CC50D92B8DBC66D5B469779FD /* YXHUDProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = DAFF5218CC38169E997C250EC6781378 /* YXHUDProgressView.m */; };
-		ABAEA95C08B1BA4A78D2B459CCD878D9 /* YXHUDProgressView.h in Headers */ = {isa = PBXBuildFile; fileRef = CEF3FBAA8BABA1D8CE9B1EF3AAE282F9 /* YXHUDProgressView.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		BFE1537D0C9CDA10EE5AD7BCA3D485D2 /* HUD_Configuration.h in Headers */ = {isa = PBXBuildFile; fileRef = 0B038DCFE7ABD224C49E9BBCD2D88A58 /* HUD_Configuration.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		CA5E682B018BF5756152E04FE2F23909 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 82D40E632FA2A47E7DBA77D3D46FDFE8 /* Foundation.framework */; };
+		CB5A5DE8CBC032B4A27D1366913F6A73 /* HUD_Configuration.h in Headers */ = {isa = PBXBuildFile; fileRef = 8633108FD3F49BC6DF4703503D4D9B60 /* HUD_Configuration.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D415D0767A8AF457434FFFB5957D4616 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E054739AD8EE5381E7FBABB3ACA80805 /* QuartzCore.framework */; };
 		E5229F5125ACD420659E7B2D19BB30A8 /* MBProgressHUD-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 12AAF657C7E10A0A69A4AF077D5A29BA /* MBProgressHUD-dummy.m */; };
 		EA321C98029015AA4895C0B26891D8F8 /* MBProgressHUD.h in Headers */ = {isa = PBXBuildFile; fileRef = DE7EF8758BDA991C8D03B84031763F63 /* MBProgressHUD.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F8961AC0327F88502DD4360CF9694A79 /* YXProgressHUDView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9784D27A9207EB73650FD3F6D7C0E9EC /* YXProgressHUDView-dummy.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,35 +49,35 @@
 /* Begin PBXFileReference section */
 		0006F85DE5BBD6A8FC1E260CE81A5C8F /* Pods-YXProgressHUDViewDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-YXProgressHUDViewDemo.release.xcconfig"; sourceTree = "<group>"; };
 		04D6892D0B7ABE4E7123C7F7A2C3B129 /* Pods-YXProgressHUDViewDemo-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-YXProgressHUDViewDemo-frameworks.sh"; sourceTree = "<group>"; };
-		0B038DCFE7ABD224C49E9BBCD2D88A58 /* HUD_Configuration.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = HUD_Configuration.h; path = YXProgressHUDView/HUD_Configuration.h; sourceTree = "<group>"; };
+		0702165D675E77F97B2DEB2BF7581B1D /* success@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; name = "success@2x.png"; path = "YXProgressHUDView/Resources/success@2x.png"; sourceTree = "<group>"; };
 		0CED48860FD21165A4FC960BF74177A1 /* libPods-YXProgressHUDViewDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-YXProgressHUDViewDemo.a"; path = "libPods-YXProgressHUDViewDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		0E16FDBA4AB1D859D01A74EF8B79F659 /* YXProgressHUDView-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "YXProgressHUDView-prefix.pch"; sourceTree = "<group>"; };
-		10B1D8F6D79B1648D1CFB8AEE01D1B36 /* error@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; name = "error@2x.png"; path = "YXProgressHUDView/Resources/error@2x.png"; sourceTree = "<group>"; };
 		12AAF657C7E10A0A69A4AF077D5A29BA /* MBProgressHUD-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "MBProgressHUD-dummy.m"; sourceTree = "<group>"; };
 		1E5A864F2FC7FB3F9994FF98D1A22141 /* MBProgressHUD.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MBProgressHUD.xcconfig; sourceTree = "<group>"; };
 		1F4D94FE351D62C6EC1EE7AB1E96A074 /* libYXProgressHUDView.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libYXProgressHUDView.a; path = libYXProgressHUDView.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		2E93BB6D0235CC38F27224353D926FC5 /* libMBProgressHUD.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libMBProgressHUD.a; path = libMBProgressHUD.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		42536C0D7EDE63C451887A109E5CF03C /* YXProgressHUDView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YXProgressHUDView.h; path = YXProgressHUDView/YXProgressHUDView.h; sourceTree = "<group>"; };
+		4433C46EB6F25D2D62E2CC556CFF8977 /* YXProgressHUDView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "YXProgressHUDView-dummy.m"; sourceTree = "<group>"; };
 		4AD91E5476FE7091AA643EA36F705CEB /* Pods-YXProgressHUDViewDemo-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-YXProgressHUDViewDemo-resources.sh"; sourceTree = "<group>"; };
 		4B098BC873196C95F0BCD2CACA08ABF8 /* Pods-YXProgressHUDViewDemo-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-YXProgressHUDViewDemo-acknowledgements.markdown"; sourceTree = "<group>"; };
-		5EE93C75F4232125B06CC561B8518AA3 /* error@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; name = "error@3x.png"; path = "YXProgressHUDView/Resources/error@3x.png"; sourceTree = "<group>"; };
-		65401AFEE456A80746B42091DB9B2F71 /* success.png */ = {isa = PBXFileReference; includeInIndex = 1; name = success.png; path = YXProgressHUDView/Resources/success.png; sourceTree = "<group>"; };
+		657871FC1DDC1E9831117501D3C12655 /* success.png */ = {isa = PBXFileReference; includeInIndex = 1; name = success.png; path = YXProgressHUDView/Resources/success.png; sourceTree = "<group>"; };
+		6D8995AA1A8A183BF911226E9F1B7D29 /* error@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; name = "error@3x.png"; path = "YXProgressHUDView/Resources/error@3x.png"; sourceTree = "<group>"; };
 		82D40E632FA2A47E7DBA77D3D46FDFE8 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		85B1D9BB54761A5581B863C0700F922A /* success@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; name = "success@2x.png"; path = "YXProgressHUDView/Resources/success@2x.png"; sourceTree = "<group>"; };
+		8633108FD3F49BC6DF4703503D4D9B60 /* HUD_Configuration.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = HUD_Configuration.h; path = YXProgressHUDView/HUD_Configuration.h; sourceTree = "<group>"; };
+		8DF2811A55A4F5D89CB4813684928609 /* YXProgressHUDView.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = YXProgressHUDView.xcconfig; sourceTree = "<group>"; };
+		8F053CC3761DFCEBC1288257AB718B6C /* YXProgressHUDView-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "YXProgressHUDView-prefix.pch"; sourceTree = "<group>"; };
 		9268E7F24F2ECDB7E65FDCA584415527 /* MBProgressHUD.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		9784D27A9207EB73650FD3F6D7C0E9EC /* YXProgressHUDView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "YXProgressHUDView-dummy.m"; sourceTree = "<group>"; };
 		A59E81A45BDF09987ADD3F15C905FC23 /* Pods-YXProgressHUDViewDemo-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-YXProgressHUDViewDemo-dummy.m"; sourceTree = "<group>"; };
-		AA6CDF1A2EA906BF4914A11A6FC93DB7 /* YXProgressHUDView.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = YXProgressHUDView.xcconfig; sourceTree = "<group>"; };
+		AC5099F393896AA1655896AB2C43522A /* error@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; name = "error@2x.png"; path = "YXProgressHUDView/Resources/error@2x.png"; sourceTree = "<group>"; };
+		BB71A31DDB040858BE022A8B4323AF10 /* success@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; name = "success@3x.png"; path = "YXProgressHUDView/Resources/success@3x.png"; sourceTree = "<group>"; };
 		C21EF1F0DA62B89C988B7EC3292E8F84 /* Pods-YXProgressHUDViewDemo-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-YXProgressHUDViewDemo-acknowledgements.plist"; sourceTree = "<group>"; };
-		CEF3FBAA8BABA1D8CE9B1EF3AAE282F9 /* YXHUDProgressView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YXHUDProgressView.h; path = YXProgressHUDView/YXHUDProgressView.h; sourceTree = "<group>"; };
+		D052AC4DF9F4F96275F90FAFCF1DD301 /* error.png */ = {isa = PBXFileReference; includeInIndex = 1; name = error.png; path = YXProgressHUDView/Resources/error.png; sourceTree = "<group>"; };
 		D49E64B0E38D75BF0881A9AC43CF6CF0 /* MBProgressHUD-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MBProgressHUD-prefix.pch"; sourceTree = "<group>"; };
-		D7A1FEB43F193E43568544F989ADBA85 /* success@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; name = "success@3x.png"; path = "YXProgressHUDView/Resources/success@3x.png"; sourceTree = "<group>"; };
-		DAFF5218CC38169E997C250EC6781378 /* YXHUDProgressView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YXHUDProgressView.m; path = YXProgressHUDView/YXHUDProgressView.m; sourceTree = "<group>"; };
 		DE7EF8758BDA991C8D03B84031763F63 /* MBProgressHUD.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
 		E054739AD8EE5381E7FBABB3ACA80805 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
+		E155F22C44B2A8CE7C99523659E30A86 /* YXProgressHUDView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YXProgressHUDView.m; path = YXProgressHUDView/YXProgressHUDView.m; sourceTree = "<group>"; };
 		E437279191299EA96CC28768D9F7A123 /* Pods-YXProgressHUDViewDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-YXProgressHUDViewDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		E5B476C7C3BDD4218E3B0B852CE57093 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/CoreGraphics.framework; sourceTree = DEVELOPER_DIR; };
-		FCA0FD38FDD2A6827856CFBFC241C400 /* error.png */ = {isa = PBXFileReference; includeInIndex = 1; name = error.png; path = YXProgressHUDView/Resources/error.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -128,14 +128,14 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		270891421AEB8CECA5A268551D870B8E /* YXProgressHUDView */ = {
+		39AE93308072207EA161ACAD30A346F6 /* YXProgressHUDView */ = {
 			isa = PBXGroup;
 			children = (
-				0B038DCFE7ABD224C49E9BBCD2D88A58 /* HUD_Configuration.h */,
-				CEF3FBAA8BABA1D8CE9B1EF3AAE282F9 /* YXHUDProgressView.h */,
-				DAFF5218CC38169E997C250EC6781378 /* YXHUDProgressView.m */,
-				7C5C602B3DA747201E0ADFD615A0518A /* Resources */,
-				B4A5A06A8AB67175DA59A91C8ADDBA8A /* Support Files */,
+				8633108FD3F49BC6DF4703503D4D9B60 /* HUD_Configuration.h */,
+				42536C0D7EDE63C451887A109E5CF03C /* YXProgressHUDView.h */,
+				E155F22C44B2A8CE7C99523659E30A86 /* YXProgressHUDView.m */,
+				92AF1EB3AF64970749BDF2AB2094AEDF /* Resources */,
+				9AFA1ED349D536033ACF2F733FE46DEF /* Support Files */,
 			);
 			name = YXProgressHUDView;
 			path = YXProgressHUDView;
@@ -145,22 +145,9 @@
 			isa = PBXGroup;
 			children = (
 				C3DDF163FB98460396E572E01CAC98C6 /* MBProgressHUD */,
-				270891421AEB8CECA5A268551D870B8E /* YXProgressHUDView */,
+				39AE93308072207EA161ACAD30A346F6 /* YXProgressHUDView */,
 			);
 			name = Pods;
-			sourceTree = "<group>";
-		};
-		7C5C602B3DA747201E0ADFD615A0518A /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-				FCA0FD38FDD2A6827856CFBFC241C400 /* error.png */,
-				10B1D8F6D79B1648D1CFB8AEE01D1B36 /* error@2x.png */,
-				5EE93C75F4232125B06CC561B8518AA3 /* error@3x.png */,
-				65401AFEE456A80746B42091DB9B2F71 /* success.png */,
-				85B1D9BB54761A5581B863C0700F922A /* success@2x.png */,
-				D7A1FEB43F193E43568544F989ADBA85 /* success@3x.png */,
-			);
-			name = Resources;
 			sourceTree = "<group>";
 		};
 		7DB346D0F39D3F0E887471402A8071AB = {
@@ -172,6 +159,19 @@
 				1EB028AFADA84A6CA768068200CE1F1C /* Products */,
 				AAB5F2264632CFD20C5C4C1E2CF591E0 /* Targets Support Files */,
 			);
+			sourceTree = "<group>";
+		};
+		92AF1EB3AF64970749BDF2AB2094AEDF /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				D052AC4DF9F4F96275F90FAFCF1DD301 /* error.png */,
+				AC5099F393896AA1655896AB2C43522A /* error@2x.png */,
+				6D8995AA1A8A183BF911226E9F1B7D29 /* error@3x.png */,
+				657871FC1DDC1E9831117501D3C12655 /* success.png */,
+				0702165D675E77F97B2DEB2BF7581B1D /* success@2x.png */,
+				BB71A31DDB040858BE022A8B4323AF10 /* success@3x.png */,
+			);
+			name = Resources;
 			sourceTree = "<group>";
 		};
 		988A82FA9F09BBBEF38765545C1B1687 /* Pods-YXProgressHUDViewDemo */ = {
@@ -189,23 +189,23 @@
 			path = "Target Support Files/Pods-YXProgressHUDViewDemo";
 			sourceTree = "<group>";
 		};
+		9AFA1ED349D536033ACF2F733FE46DEF /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				8DF2811A55A4F5D89CB4813684928609 /* YXProgressHUDView.xcconfig */,
+				4433C46EB6F25D2D62E2CC556CFF8977 /* YXProgressHUDView-dummy.m */,
+				8F053CC3761DFCEBC1288257AB718B6C /* YXProgressHUDView-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/YXProgressHUDView";
+			sourceTree = "<group>";
+		};
 		AAB5F2264632CFD20C5C4C1E2CF591E0 /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
 				988A82FA9F09BBBEF38765545C1B1687 /* Pods-YXProgressHUDViewDemo */,
 			);
 			name = "Targets Support Files";
-			sourceTree = "<group>";
-		};
-		B4A5A06A8AB67175DA59A91C8ADDBA8A /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				AA6CDF1A2EA906BF4914A11A6FC93DB7 /* YXProgressHUDView.xcconfig */,
-				9784D27A9207EB73650FD3F6D7C0E9EC /* YXProgressHUDView-dummy.m */,
-				0E16FDBA4AB1D859D01A74EF8B79F659 /* YXProgressHUDView-prefix.pch */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/YXProgressHUDView";
 			sourceTree = "<group>";
 		};
 		C3DDF163FB98460396E572E01CAC98C6 /* MBProgressHUD */ = {
@@ -251,12 +251,12 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		358FBAF4BAE241794C624834C5692561 /* Headers */ = {
+		31CA170770B6564D36894D5584EDC444 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BFE1537D0C9CDA10EE5AD7BCA3D485D2 /* HUD_Configuration.h in Headers */,
-				ABAEA95C08B1BA4A78D2B459CCD878D9 /* YXHUDProgressView.h in Headers */,
+				CB5A5DE8CBC032B4A27D1366913F6A73 /* HUD_Configuration.h in Headers */,
+				651693A1989F09010D71DD2DFCBB02AF /* YXProgressHUDView.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -284,9 +284,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D19A9D9E92C610DE38FE8AEC021B32C8 /* Build configuration list for PBXNativeTarget "YXProgressHUDView" */;
 			buildPhases = (
-				1DB12E8806AA66A833CD195FB11C2FA5 /* Sources */,
+				3CE5F1605936F0E0A6715795F5303B8F /* Sources */,
 				9F3B2E8CCD08BB3279A90BF753DBA9EF /* Frameworks */,
-				358FBAF4BAE241794C624834C5692561 /* Headers */,
+				31CA170770B6564D36894D5584EDC444 /* Headers */,
 			);
 			buildRules = (
 			);
@@ -345,12 +345,12 @@
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		1DB12E8806AA66A833CD195FB11C2FA5 /* Sources */ = {
+		3CE5F1605936F0E0A6715795F5303B8F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A026711CC50D92B8DBC66D5B469779FD /* YXHUDProgressView.m in Sources */,
-				F8961AC0327F88502DD4360CF9694A79 /* YXProgressHUDView-dummy.m in Sources */,
+				6214DEC49C4673C5D77F27C6BF6CE306 /* YXProgressHUDView-dummy.m in Sources */,
+				47F59CAADBF7A1867EA1E3B844D90399 /* YXProgressHUDView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -464,7 +464,7 @@
 		};
 		2BE2268B471532AFD36FF8EDF6C783A7 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = AA6CDF1A2EA906BF4914A11A6FC93DB7 /* YXProgressHUDView.xcconfig */;
+			baseConfigurationReference = 8DF2811A55A4F5D89CB4813684928609 /* YXProgressHUDView.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -573,7 +573,7 @@
 		};
 		59F294C9B7E749F13FEBBA2B90E56B7F /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = AA6CDF1A2EA906BF4914A11A6FC93DB7 /* YXProgressHUDView.xcconfig */;
+			baseConfigurationReference = 8DF2811A55A4F5D89CB4813684928609 /* YXProgressHUDView.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
