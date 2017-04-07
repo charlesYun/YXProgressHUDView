@@ -109,7 +109,6 @@ void ShowDefaultSuccessView(NSString *message,void(^completed)()) {
         });
     }else{
         MBProgressHUD *hud = baseHUDView(DefalutWindow());
-        hud.label.text = message;
         PerformCustomHUDMethod(hud,message,@"success",completed);
     }
 }
@@ -131,7 +130,6 @@ void ShowSuccessView(UIView *view,NSString *message,void(^completed)()) {
         });
     }else{
         MBProgressHUD *hud = baseHUDView(view);
-        hud.label.text = message;
         PerformCustomHUDMethod(hud,message,@"success",completed);
     }
 }
@@ -149,12 +147,10 @@ void ShowDefaultErrorView(NSString *message,void(^completed)()) {
     if (![NSThread isMainThread]) {
         dispatch_async(dispatch_get_main_queue(), ^{
             MBProgressHUD *hud = baseHUDView(DefalutWindow());
-            hud.label.text = message;
             PerformCustomHUDMethod(hud,message,@"error",completed);
         });
     }else{
         MBProgressHUD *hud = baseHUDView(DefalutWindow());
-        hud.label.text = message;
         PerformCustomHUDMethod(hud,message,@"error",completed);
     }
 }
@@ -172,12 +168,10 @@ void ShowErrorView(UIView *view,NSString *message,void(^completed)()) {
     if (![NSThread isMainThread]) {
         dispatch_async(dispatch_get_main_queue(), ^{
             MBProgressHUD *hud = baseHUDView(view);
-            hud.label.text = message;
             PerformCustomHUDMethod(hud,message,@"error",completed);
         });
     }else{
         MBProgressHUD *hud = baseHUDView(view);
-        hud.label.text = message;
         PerformCustomHUDMethod(hud,message,@"error",completed);
     }
 }
@@ -188,14 +182,14 @@ void ShowErrorView(UIView *view,NSString *message,void(^completed)()) {
  
  @param hud        MBProgressHUD
  @param message    提示信息
- @param imageNamed 自定义图片名称
+ @param imageName 自定义图片名称
  @param completed  完成回调
  */
-void PerformCustomHUDMethod(MBProgressHUD *hud,NSString *message,NSString *imageNamed,void(^completed)()) {
+void PerformCustomHUDMethod(MBProgressHUD *hud,NSString *message,NSString *imageName,void(^completed)()) {
     
     hud.mode = MBProgressHUDModeCustomView;
     hud.label.text = message;
-    UIImage *image = [[UIImage imageNamed:imageNamed] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
+    UIImage *image = [getBundleImageName(imageName) imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
     hud.customView = [[UIImageView alloc] initWithImage:image];
     hud.bezelView.backgroundColor = HUDBezelViewColor
     [hud hideAnimated:YES afterDelay:HUDShowTime];
@@ -321,7 +315,7 @@ NSArray* AllIndicatorViewForView(UIView *view) {
 
 /**
  默认窗口
-
+ 
  @return UIWindow
  */
 UIView *DefalutWindow(void) {
@@ -331,9 +325,16 @@ UIView *DefalutWindow(void) {
 
 
 
-
-
-
+/**
+ 获取资源包图片
+ 
+ @param imageName 图片名称
+ */
+UIImage* getBundleImageName(NSString *imageName) {
+    NSString *bundlePath = [[NSBundle mainBundle] pathForResource:@"YXProgressHUDView" ofType:@"bundle"];
+    NSString *imagePath = [bundlePath stringByAppendingPathComponent:imageName];
+    return [UIImage imageWithContentsOfFile:imagePath];
+}
 
 
 

@@ -77,20 +77,10 @@ EOM
   esac
 }
 if [[ "$CONFIGURATION" == "Debug" ]]; then
-  install_resource "YXProgressHUDView/YXProgressHUDView/Resources/error.png"
-  install_resource "YXProgressHUDView/YXProgressHUDView/Resources/error@2x.png"
-  install_resource "YXProgressHUDView/YXProgressHUDView/Resources/error@3x.png"
-  install_resource "YXProgressHUDView/YXProgressHUDView/Resources/success.png"
-  install_resource "YXProgressHUDView/YXProgressHUDView/Resources/success@2x.png"
-  install_resource "YXProgressHUDView/YXProgressHUDView/Resources/success@3x.png"
+  install_resource "YXProgressHUDView/YXProgressHUDView/Resources/YXProgressHUDView.bundle"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
-  install_resource "YXProgressHUDView/YXProgressHUDView/Resources/error.png"
-  install_resource "YXProgressHUDView/YXProgressHUDView/Resources/error@2x.png"
-  install_resource "YXProgressHUDView/YXProgressHUDView/Resources/error@3x.png"
-  install_resource "YXProgressHUDView/YXProgressHUDView/Resources/success.png"
-  install_resource "YXProgressHUDView/YXProgressHUDView/Resources/success@2x.png"
-  install_resource "YXProgressHUDView/YXProgressHUDView/Resources/success@3x.png"
+  install_resource "YXProgressHUDView/YXProgressHUDView/Resources/YXProgressHUDView.bundle"
 fi
 
 mkdir -p "${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}"
