@@ -21,6 +21,7 @@ MBProgressHUD* baseHUDView(UIView *view){
     hud.bezelView.layer.cornerRadius = HUDBezelViewCornerRadius;
     hud.margin = HUDContentMargin;
     hud.removeFromSuperViewOnHide = YES;
+    hud.label.numberOfLines = 0;
     return hud;
 }
 
