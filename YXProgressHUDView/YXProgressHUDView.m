@@ -11,7 +11,10 @@
 @implementation YXProgressHUDView
 
 
-#pragma mark -创建初始HUDView
+
+/**
+ 初始化
+ */
 MBProgressHUD* baseHUDView(UIView *view){
     
     MBProgressHUD *hud = [MBProgressHUD showHUDAddedTo:view animated:YES];
@@ -321,9 +324,6 @@ NSArray* AllIndicatorViewForView(UIView *view) {
 UIView *DefalutWindow(void) {
     return  [[UIApplication sharedApplication].delegate window];
 }
-
-
-
 
 /**
  获取资源包图片
