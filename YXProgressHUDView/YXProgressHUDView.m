@@ -334,9 +334,9 @@ UIView *DefalutWindow(void) {
  @param imageName 图片名称
  */
 UIImage* getBundleImageName(NSString *imageName) {
-    NSString *bundlePath = [[NSBundle mainBundle] pathForResource:@"YXBundle" ofType:@"bundle"];
-    NSString *imagePath = [bundlePath stringByAppendingPathComponent:imageName];
-    return [UIImage imageWithContentsOfFile:imagePath];
+    NSBundle *bundlePath = [NSBundle bundleWithPath:[[NSBundle bundleForClass:[YXProgressHUDView class]] pathForResource:@"YXBundle" ofType:@"bundle"]];
+    return [[UIImage imageWithContentsOfFile:[bundlePath pathForResource:imageName ofType:@"png"]] imageWithRenderingMode:UIImageRenderingModeAlwaysTemplate];
+    
 }
 
 
