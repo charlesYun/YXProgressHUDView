@@ -326,21 +326,18 @@ UIView *DefalutWindow(void) {
     return  [[UIApplication sharedApplication].delegate window];
 }
 
+
+
 /**
  获取资源包图片
  
  @param imageName 图片名称
  */
 UIImage* getBundleImageName(NSString *imageName) {
-    NSString *bundlePath = [[NSBundle mainBundle] pathForResource:@"YXProgressHUDView" ofType:@"bundle"];
+    NSString *bundlePath = [[NSBundle mainBundle] pathForResource:@"YXBundle" ofType:@"bundle"];
     NSString *imagePath = [bundlePath stringByAppendingPathComponent:imageName];
     return [UIImage imageWithContentsOfFile:imagePath];
 }
-
-
-
-
-
 
 
 

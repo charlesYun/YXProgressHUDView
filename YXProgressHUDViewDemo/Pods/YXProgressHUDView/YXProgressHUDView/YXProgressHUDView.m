@@ -11,7 +11,10 @@
 @implementation YXProgressHUDView
 
 
-#pragma mark -创建初始HUDView
+
+/**
+ 初始化
+ */
 MBProgressHUD* baseHUDView(UIView *view){
     
     MBProgressHUD *hud = [MBProgressHUD showHUDAddedTo:view animated:YES];
@@ -316,21 +319,20 @@ NSArray* AllIndicatorViewForView(UIView *view) {
 
 /**
  默认窗口
-
+ 
  @return UIWindow
  */
 UIView *DefalutWindow(void) {
     return  [[UIApplication sharedApplication].delegate window];
 }
 
-
 /**
  获取资源包图片
-
+ 
  @param imageName 图片名称
  */
 UIImage* getBundleImageName(NSString *imageName) {
-    NSString *bundlePath = [[NSBundle mainBundle] pathForResource:@"YXProgressHUDView" ofType:@"bundle"];
+    NSString *bundlePath = [[NSBundle mainBundle] pathForResource:@"YXBundle" ofType:@"bundle"];
     NSString *imagePath = [bundlePath stringByAppendingPathComponent:imageName];
     return [UIImage imageWithContentsOfFile:imagePath];
 }
