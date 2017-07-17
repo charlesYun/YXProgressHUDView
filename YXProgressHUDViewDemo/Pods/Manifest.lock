@@ -1,6 +1,6 @@
 PODS:
   - MBProgressHUD (1.0.0)
-  - YXProgressHUDView (1.0.7):
+  - YXProgressHUDView (2.0.1):
     - MBProgressHUD (~> 1.0.0)
 
 DEPENDENCIES:
@@ -8,8 +8,8 @@ DEPENDENCIES:
 
 SPEC CHECKSUMS:
   MBProgressHUD: 4890f671c94e8a0f3cf959aa731e9de2f036d71a
-  YXProgressHUDView: 965b57ceeab761adc1fb3d8dfaa0ecc088140e1b
+  YXProgressHUDView: 73591072ca06296cae347c2e9e9fb7b762ef542d
 
 PODFILE CHECKSUM: 0cf40f65eacdefff9517fa1172125ebeb748bb3f
 
-COCOAPODS: 1.2.0
+COCOAPODS: 1.2.1

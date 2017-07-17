@@ -49,13 +49,12 @@
 /* Begin PBXFileReference section */
 		0006F85DE5BBD6A8FC1E260CE81A5C8F /* Pods-YXProgressHUDViewDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-YXProgressHUDViewDemo.release.xcconfig"; sourceTree = "<group>"; };
 		04D6892D0B7ABE4E7123C7F7A2C3B129 /* Pods-YXProgressHUDViewDemo-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-YXProgressHUDViewDemo-frameworks.sh"; sourceTree = "<group>"; };
-		0CED48860FD21165A4FC960BF74177A1 /* libPods-YXProgressHUDViewDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-YXProgressHUDViewDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0CED48860FD21165A4FC960BF74177A1 /* libPods-YXProgressHUDViewDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-YXProgressHUDViewDemo.a"; path = "libPods-YXProgressHUDViewDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		12992E853CAE14F2102525E0D84ADAB5 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		12AAF657C7E10A0A69A4AF077D5A29BA /* MBProgressHUD-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "MBProgressHUD-dummy.m"; sourceTree = "<group>"; };
 		1E5A864F2FC7FB3F9994FF98D1A22141 /* MBProgressHUD.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MBProgressHUD.xcconfig; sourceTree = "<group>"; };
-		1F4D94FE351D62C6EC1EE7AB1E96A074 /* libYXProgressHUDView.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libYXProgressHUDView.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		29C11FCB1EC0910C001A535C /* YXBundle.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = YXBundle.bundle; sourceTree = "<group>"; };
-		2E93BB6D0235CC38F27224353D926FC5 /* libMBProgressHUD.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libMBProgressHUD.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		1F4D94FE351D62C6EC1EE7AB1E96A074 /* libYXProgressHUDView.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libYXProgressHUDView.a; path = libYXProgressHUDView.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		2E93BB6D0235CC38F27224353D926FC5 /* libMBProgressHUD.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libMBProgressHUD.a; path = libMBProgressHUD.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		34986CA8B4F978D6C247CDF466ABC5EF /* YXProgressHUDView-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "YXProgressHUDView-prefix.pch"; sourceTree = "<group>"; };
 		409899CE1143F81E8130E2069D59605B /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/CoreGraphics.framework; sourceTree = DEVELOPER_DIR; };
 		4AD91E5476FE7091AA643EA36F705CEB /* Pods-YXProgressHUDViewDemo-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-YXProgressHUDViewDemo-resources.sh"; sourceTree = "<group>"; };
@@ -64,9 +63,10 @@
 		5F7BDB2580B244756CFA046131516EF2 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
 		6B51E938584F2E81134CAF63481596B6 /* YXProgressHUDView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YXProgressHUDView.m; path = YXProgressHUDView/YXProgressHUDView.m; sourceTree = "<group>"; };
 		9268E7F24F2ECDB7E65FDCA584415527 /* MBProgressHUD.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
-		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9FA3D4F1207BB52B9EC09CD9D6A8F22A /* HUD_Configuration.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = HUD_Configuration.h; path = YXProgressHUDView/HUD_Configuration.h; sourceTree = "<group>"; };
 		A59E81A45BDF09987ADD3F15C905FC23 /* Pods-YXProgressHUDViewDemo-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-YXProgressHUDViewDemo-dummy.m"; sourceTree = "<group>"; };
+		B60CF36F385BBCB1748591A11C7707D4 /* YXBundle.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = YXBundle.bundle; path = YXProgressHUDView/Resources/YXBundle.bundle; sourceTree = "<group>"; };
 		C21DC332FD4D3DA9520A6A50CA8F72A2 /* YXProgressHUDView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YXProgressHUDView.h; path = YXProgressHUDView/YXProgressHUDView.h; sourceTree = "<group>"; };
 		C21EF1F0DA62B89C988B7EC3292E8F84 /* Pods-YXProgressHUDViewDemo-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-YXProgressHUDViewDemo-acknowledgements.plist"; sourceTree = "<group>"; };
 		D49E64B0E38D75BF0881A9AC43CF6CF0 /* MBProgressHUD-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MBProgressHUD-prefix.pch"; sourceTree = "<group>"; };
@@ -123,23 +123,16 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		2D4B37D71338B0A9E454761B61E803B7 /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-				29C11FCB1EC0910C001A535C /* YXBundle.bundle */,
-			);
-			name = Resources;
-			sourceTree = "<group>";
-		};
 		518072F522B17242630BF4E913ED9DCF /* YXProgressHUDView */ = {
 			isa = PBXGroup;
 			children = (
 				9FA3D4F1207BB52B9EC09CD9D6A8F22A /* HUD_Configuration.h */,
 				C21DC332FD4D3DA9520A6A50CA8F72A2 /* YXProgressHUDView.h */,
 				6B51E938584F2E81134CAF63481596B6 /* YXProgressHUDView.m */,
-				2D4B37D71338B0A9E454761B61E803B7 /* Resources */,
+				E2162D3A51492E1FC829E4AFDB8AB023 /* Resources */,
 				A1083519B2DBAE2EDFBAA435486E40B7 /* Support Files */,
 			);
+			name = YXProgressHUDView;
 			path = YXProgressHUDView;
 			sourceTree = "<group>";
 		};
@@ -214,7 +207,16 @@
 				9268E7F24F2ECDB7E65FDCA584415527 /* MBProgressHUD.m */,
 				EFFF9E2211F0986EEAC3568AE572A010 /* Support Files */,
 			);
+			name = MBProgressHUD;
 			path = MBProgressHUD;
+			sourceTree = "<group>";
+		};
+		E2162D3A51492E1FC829E4AFDB8AB023 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				B60CF36F385BBCB1748591A11C7707D4 /* YXBundle.bundle */,
+			);
+			name = Resources;
 			sourceTree = "<group>";
 		};
 		EFFF9E2211F0986EEAC3568AE572A010 /* Support Files */ = {

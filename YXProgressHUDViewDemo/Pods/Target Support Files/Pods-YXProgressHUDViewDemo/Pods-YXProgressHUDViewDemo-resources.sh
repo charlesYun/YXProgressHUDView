@@ -21,6 +21,9 @@ case "${TARGETED_DEVICE_FAMILY}" in
   3)
     TARGET_DEVICE_ARGS="--target-device tv"
     ;;
+  4)
+    TARGET_DEVICE_ARGS="--target-device watch"
+    ;;
   *)
     TARGET_DEVICE_ARGS="--target-device mac"
     ;;
@@ -77,10 +80,10 @@ EOM
   esac
 }
 if [[ "$CONFIGURATION" == "Debug" ]]; then
-  install_resource "YXProgressHUDView/YXProgressHUDView/Resources/YXProgressHUDView.bundle"
+  install_resource "YXProgressHUDView/YXProgressHUDView/Resources/YXBundle.bundle"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
-  install_resource "YXProgressHUDView/YXProgressHUDView/Resources/YXProgressHUDView.bundle"
+  install_resource "YXProgressHUDView/YXProgressHUDView/Resources/YXBundle.bundle"
 fi
 
 mkdir -p "${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}"
