@@ -18,12 +18,12 @@
 MBProgressHUD* baseHUDView(UIView *view){
     
     MBProgressHUD *hud = [MBProgressHUD showHUDAddedTo:view animated:YES];
-    hud.animationType = MBProgressHUDAnimationZoom;
+    hud.animationType = MBProgressHUDAnimationFade;
     hud.contentColor = HUDContentColor;
     hud.bezelView.backgroundColor = HUDBezelViewColor;
-    hud.bezelView.layer.cornerRadius = HUDBezelViewCornerRadius;
     hud.margin = HUDContentMargin;
     hud.removeFromSuperViewOnHide = YES;
+    hud.label.font = [UIFont boldSystemFontOfSize:15];
     hud.label.numberOfLines = 0;
     return hud;
 }

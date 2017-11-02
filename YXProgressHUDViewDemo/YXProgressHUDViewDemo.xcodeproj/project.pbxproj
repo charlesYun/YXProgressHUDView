@@ -142,7 +142,7 @@
 				TargetAttributes = {
 					2971CDAC1E37267B00767EBD = {
 						CreatedOnToolsVersion = 8.2.1;
-						DevelopmentTeam = 6VMCD64Z88;
+						DevelopmentTeam = 2G3393EZPN;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -355,7 +355,7 @@
 			baseConfigurationReference = 1F752D5F7A0F360DE06B7409 /* Pods-YXProgressHUDViewDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 6VMCD64Z88;
+				DEVELOPMENT_TEAM = 2G3393EZPN;
 				INFOPLIST_FILE = YXProgressHUDViewDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -369,7 +369,7 @@
 			baseConfigurationReference = E355AB65CB31DD90873F2644 /* Pods-YXProgressHUDViewDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 6VMCD64Z88;
+				DEVELOPMENT_TEAM = 2G3393EZPN;
 				INFOPLIST_FILE = YXProgressHUDViewDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
